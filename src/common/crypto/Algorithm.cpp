@@ -64,7 +64,8 @@ static AlgoData const algorithms[] = {
     { "cryptonight/2",         "cn/2",         xmrig::CRYPTONIGHT,       xmrig::VARIANT_2    },
     { "cryptonight/half",      "cn/half",      xmrig::CRYPTONIGHT,       xmrig::VARIANT_HALF },
     { "cryptonight/xtlv9",     "cn/xtlv9",     xmrig::CRYPTONIGHT,       xmrig::VARIANT_HALF },
-
+    { "cryptonight/conceal",   "cn/conc",      xmrig::CRYPTONIGHT,       xmrig::VARIANT_CONC },
+ 
 #   ifndef XMRIG_NO_AEON
     { "cryptonight-lite",      "cn-lite",      xmrig::CRYPTONIGHT_LITE,  xmrig::VARIANT_AUTO },
     { "cryptonight-light",     "cn-light",     xmrig::CRYPTONIGHT_LITE,  xmrig::VARIANT_AUTO },
@@ -105,6 +106,7 @@ static AlgoData const xmrStakAlgorithms[] = {
     { "cryptonight_masari",      nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_MSR  },
     { "cryptonight-bittube2",    nullptr, xmrig::CRYPTONIGHT_HEAVY, xmrig::VARIANT_TUBE }, // bittube-miner
     { "cryptonight_alloy",       nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_XAO  }, // xmr-stak-alloy
+    { "cryptonight_conceal",     nullptr, xmrig::CRYPTONIGHT,       xmrig::VARIANT_CONC }, // xmr-stak-conceal
 };
 #endif
 
@@ -120,7 +122,8 @@ static const char *variants[] = {
     "rto",
     "2",
     "half",
-    "trtl"
+    "trtl",
+    "conceal"
 };
 
 
